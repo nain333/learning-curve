@@ -1,0 +1,44 @@
+#div1{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-color: orange;
+    top:25%;
+    left: 15%;
+    color:blue;
+    padding-left: 5px;
+
+    
+
+   
+    
+}
+ 
+#div1:hover{
+    background-color: orangered;
+    transform: translate(100px) rotate(360deg) scale(2.0) ;
+    border-radius:50%;
+    border: green 10px solid;
+     text-align: center;
+     font-size: xx-small;
+     
+     
+
+    transition: all 5s ease-in-out .5ms;
+    
+    
+
+
+}
+#name{
+    text-align: left;
+    margin-left: 2rem;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+#name:hover{
+    color: gold;
+    user-select: all;
+}
+

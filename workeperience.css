@@ -1,0 +1,21 @@
+.mb-75px{
+    margin-bottom: 75px;
+}
+.section-heading{
+    font-family: bold;
+    color: royalblue;
+}
+.timeline{
+    position: relative;
+    width: 75% ;
+    border:2px solid black;
+
+}
+.timeline-box{
+    position: relative;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+   border: 2px solid black;
+   margin: 5px; 
+}

@@ -1,0 +1,18 @@
+
+div{
+    width: 100%;
+    border: 2px black solid;
+
+}
+@media  (min-width:900px) {
+    #div1{
+        width:80%;
+
+    }
+    
+}
+@media (min-width:1000px){
+    #div1{
+        width: 60%;
+    }
+}
