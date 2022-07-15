@@ -7,6 +7,7 @@
     left: 15%;
     color:blue;
     padding-left: 5px;
+    transition:  5s ease-in-out .5ms;
 
     
 
@@ -24,7 +25,7 @@
      
      
 
-    transition: all 5s ease-in-out .5ms;
+   
     
     
 
@@ -40,5 +41,95 @@
 #name:hover{
     color: gold;
     user-select: all;
+    
+}
+#div2{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    background-color:aquamarine;
+    top:40%;
+    left:40%;
+   
+    
+}
+#div2:hover{
+    background-color: cadetblue;
+    animation: changeShape 1s ease-in-out  4 alternate ;
+    
+    
+
+    
+
+    
+
+}
+#div3{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 20%;
+    top:20%;
+    background-color: magenta;
+    animation: spining 1s ease-in-out infinite alternate;
+}
+#div4{
+    width:200px;
+    height: 50px;
+    background-color: antiquewhite;
+    position: absolute;
+    animation: fade-in-fade-out 1s ease-in-out infinite alternate;
+
+
+}
+/*ANIMATIONS*/
+@keyframes changeShape{
+    from{
+        border-radius: o;
+
+
+
+    }
+    5%{transform:translateY(6rem) ;
+        
+    }
+    30%{
+        transform: translateY(-6rem);
+    }
+    60%{
+        transform: translateY(2rem);
+        transform: scale();
+    }
+    90%{
+        transform: translateY(-2rem);
+    }
+    to{
+        border-radius: 50%;
+    }
+}
+@keyframes spining{
+    from{
+        transform: rotate(0deg);
+
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+} 
+@keyframes fade-in-fade-out{
+    from{
+        background-color: white;
+        color: white;
+
+
+    }
+    to{
+        background-color: antiquewhite;
+        color: black;
+    }
+
 }
 
