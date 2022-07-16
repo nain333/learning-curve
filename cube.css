@@ -1,0 +1,104 @@
+.cube{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin: 100px;
+    transform-style: preserve-3d;
+    perspective:1000px;
+    transform: rotateX(25deg) rotateY(-25deg);
+    animation-name:  spin, rotate;
+    animation-duration: 3s,3s;
+    animation-iteration-count: infinite, 2;
+    animation-direction: alternate alternate;
+}
+.face{
+    height:100%;
+    width:100%;
+    position: absolute;
+    top:70%;
+    left:50%;
+    transition:all 1s;
+    
+   
+}
+.one{
+    background-image: linear-gradient(blue,aqua);
+    
+    
+}
+/* .one:hover{
+    transform: rotateX(40deg) rotateY(40deg); */
+
+
+.two{
+    background: linear-gradient(orangered,orange);
+    transform:rotateY(90deg) translateZ(-100px) translateX(-100px);
+    
+    
+     
+
+    
+
+    
+}
+.three{
+    background:linear-gradient(rgb(194, 0, 201), pink);
+    transform:rotateY(90deg) translateZ(100px) translateX(-100px);
+    
+    
+    
+}
+.four{
+    background:linear-gradient(#e69706, #FFE5B4);
+    transform:rotateX(90deg) translateY(100px) translateZ(100px);
+    
+    
+}
+.five{
+    background:linear-gradient(green,lime);
+    transform: rotateX(90deg) translateZ(-100px) translateY(100px);
+   
+    
+}
+.six{
+    background: linear-gradient(red,rgb(170, 103, 103));
+    transform: translateZ(200px);
+
+    
+}
+/* animations */
+@keyframes spin{
+    from{
+        transform: rotate3d(0);
+    }
+    25%{
+        transform: rotate3d(1, 1, 1, 45deg);
+    }
+    50%{
+        transform: rotate3d(2, -1, -1, -0.2turn);
+    }
+    75%{
+        transform: rotate3d(0, 1, 0.5, 3.142rad);
+    }
+    100%{
+        transform: rotate3d(0, 1, 0.5, 3.142rad);
+    }
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform:rotate(90deg)
+    }
+    50%{
+        transform:rotate(180deg)
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    to{
+
+        transform: rotate(360deg);
+    }
+}

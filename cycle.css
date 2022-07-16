@@ -5,6 +5,7 @@
     position: absolute;
     top: 52%;
     left: 25%;
+    background-image: linear-gradient(chocolate,brown);
     animation-name:changeShape,reducesize,rotate;
     animation-duration: 5s,4s,3s;
     animation-timing-function: ease-in-out,ease-in-out,ease-in-out;
